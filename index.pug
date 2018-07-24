@@ -1,0 +1,81 @@
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title week8-parallax-scrolling
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400')
+    link(rel='stylesheet', href='all.css')
+  body
+    .section1
+        .title
+            h2 GEOMETRY PERSON
+            span find your core personality type in shapes!
+        .triangle
+            .top
+            .bottom
+        .circle
+        .square
+
+    .section2(style="display:none")
+        .question.question1
+            span.question_num Q1
+            span.question_title If one day you get a gift that can change the rule of the world, which ability will you choose? 
+            span.question_notice Choose the answer appeared in your mind instantly
+            .btn.btn1 Destroy all humans in the world
+            .btn.btn1 Make the war never happened
+            .btn.btn1 You won’t get old and live forever
+        .section2_bg
+            .section2_circle
+            .section2_triangle
+            .section2_square
+        
+    .section3(style="display:none")
+        .question.question2
+            span.question_num Q2
+            span.question_title Imagine you’re almost late, but totally lost at a forked road. Which way do you prefer to go?
+            span.question_notice Choose the answer appeared in your mind instantly
+            .btn.btn2 The left one
+            .btn.btn2 The right one
+            .btn.btn2 Open Google Map
+        .section3_bg
+            .section3_circle
+            .section3_triangle
+            .section3_square
+
+    .section4(style="display:none")
+        .question.question3
+            span.question_num Q3
+            span.question_title When you’re in a exam which you barely prepared for, which is your priority solution?
+            span.question_notice Choose the answer appeared in your mind instantly
+            .btn.btn3 Take a nap right away
+            .btn.btn3 Fill the answer randomly
+            .btn.btn3 All fill the answer "Compatible"
+        .section4_bg
+            .section4_circle
+            .section4_triangle
+            .section4_square
+
+    .section5(style="display:none")
+        .titleDone
+            h2 ALL DONE!
+            span Keep scrolling to show the result
+        .triangle1
+        .triangle2
+        .triangle3
+        .triangle4
+        .triangle5
+        .triangle6
+        .triangle7
+        .triangle8
+        .triangle9
+        .triangle10
+        .triangle11
+    .section6(style="display:none")
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js')
+    script(src='all.js')
