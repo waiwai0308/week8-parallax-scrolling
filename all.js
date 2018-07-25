@@ -834,7 +834,14 @@ function questionResult() {
 }
 
 function ResultToLastResult() {
-    var timeline8 = new TimelineMax({ onComplete: ResultToLastResult });
+    document.querySelector(".section7").style.display = "none";
+    document.querySelector(".section_TRIANGLE").style.display = "flex";
+
+    lastResult();
+}
+
+function lastResult() {
+    var timeline8 = new TimelineMax({ });
     timeline8.set(".triangleTitle", {
         left: '20%',
         top: '16%'
@@ -927,7 +934,5 @@ function ResultToLastResult() {
         4.2
     );
 }
-
-ResultToLastResult();
 
 start();
