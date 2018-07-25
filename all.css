@@ -14,7 +14,16 @@ body {
   background-color: #d4d4d4;
   height: 100%; }
 
-.section1, .section2, .section3, .section4, .section5, .section6 {
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section_TRIANGLE,
+.section_RECTANGLE,
+.section_CIRCULAR {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,3 +424,384 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #0027C8; }
+  .section6 .titleComming {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    z-index: 100; }
+    .section6 .titleComming h2 {
+      font-size: 64px;
+      margin: 0; }
+    .section6 .titleComming span {
+      font-size: 24px; }
+  .section6 .square1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square2 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square3 {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background: #000;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square4 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square5 {
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    background: #000;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square6 {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square7 {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square8 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square9 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: #000;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square10 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px; }
+  .section6 .square11 {
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px; }
+
+.section7 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FF3C82; }
+  .section7 .titleResult {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: black;
+    height: 100%;
+    z-index: 100; }
+    .section7 .titleResult h2 {
+      font-size: 64px;
+      margin: 0; }
+    .section7 .titleResult span {
+      font-size: 24px; }
+  .section7 .circle1 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: #0027C8;
+    bottom: 0px;
+    left: 0px; }
+  .section7 .circle2 {
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    background: #fff;
+    bottom: 0px;
+    left: 0px; }
+  .section7 .circle3 {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: #000;
+    bottom: 0px;
+    left: 0px; }
+  .section7 .circle4 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: #0027C8;
+    bottom: 0px;
+    left: 0px; }
+  .section7 .circle5 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px; }
+  .section7 .circle6 {
+    position: absolute;
+    width: 580px;
+    height: 580px;
+    border-radius: 50%;
+    background: #fff;
+    bottom: 0px;
+    left: 0px;
+    z-index: 101; }
+  .section7 .circle7 {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #000;
+    bottom: 0px;
+    left: 0px; }
+  .section7 .circle8 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #0027C8;
+    bottom: 0px;
+    left: 0px; }
+  .section7 .circle9 {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px; }
+  .section7 .circle10 {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: #fff;
+    bottom: 0px;
+    left: 0px; }
+
+.section_TRIANGLE {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #1469FF; }
+  .section_TRIANGLE .triangleTitle {
+    text-align: center;
+    position: absolute;
+    right: 180px;
+    top: 90px; }
+    .section_TRIANGLE .triangleTitle h2 {
+      font-size: 64px;
+      color: #FFFFFF;
+      margin: 0;
+      margin-bottom: 24px; }
+    .section_TRIANGLE .triangleTitle span {
+      display: inline-block;
+      font-size: 24px;
+      color: #FFFFFF;
+      line-height: 36px;
+      font-weight: 300;
+      margin-bottom: 10px; }
+  .section_TRIANGLE .triangleInfo {
+    font-size: 36px;
+    color: #0027C8;
+    line-height: 48px;
+    font-weight: 900;
+    position: absolute;
+    right: 100px;
+    bottom: 300px; }
+    .section_TRIANGLE .triangleInfo span {
+      display: block;
+      margin-bottom: 24px; }
+  .section_TRIANGLE .triangleText {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 36px;
+    width: 380px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    position: absolute;
+    right: 100px;
+    bottom: 155px; }
+  .section_TRIANGLE .btn {
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
+    border: 2px solid #ffffff;
+    width: 380px;
+    border-radius: 30.5px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 36px;
+    padding: 10px 0;
+    margin-top: 16px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .section_TRIANGLE .btn:hover {
+      background-color: #fff;
+      color: black; }
+  .section_TRIANGLE .main_triangle_outline {
+    -webkit-text-stroke: 4px white;
+    color: transparent;
+    font-size: 585px;
+    z-index: 2;
+    position: absolute;
+    bottom: -203px;
+    left: 25%; }
+  .section_TRIANGLE .main_triangle_cover1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 215px 372.4px 215px;
+    border-color: transparent transparent #000 transparent;
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+    z-index: 1; }
+  .section_TRIANGLE .main_triangle_cover2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 240px 415.7px 240px;
+    border-color: transparent transparent #0027C8 transparent;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    z-index: 3; }
+  .section_TRIANGLE .small_triangle1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 80px; }
+  .section_TRIANGLE .small_triangle2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 250px;
+    left: 50px; }
+  .section_TRIANGLE .small_triangle3 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 220px;
+    left: 750px; }
+  .section_TRIANGLE .small_triangle4 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: #0027C8 transparent transparent transparent;
+    position: absolute;
+    top: 150px;
+    left: 200px; }
+  .section_TRIANGLE .small_triangle5 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: #0027C8 transparent transparent transparent;
+    position: absolute;
+    top: 130px;
+    left: 300px; }
+  .section_TRIANGLE .small_triangle6 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: #0027C8 transparent transparent transparent;
+    position: absolute;
+    top: 50px;
+    left: 600px; }
+  .section_TRIANGLE .small_triangle7 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: #0027C8 transparent transparent transparent;
+    position: absolute;
+    top: 160px;
+    left: 950px; }
+
+.section_RECTANGLE {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #0027C8; }
+
+.section_CIRCULAR {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FF3C82; }

@@ -151,7 +151,6 @@ function question1() {
     });
 }
 
-
 function question1End() {
     var timeline2_1 = new TimelineMax({ onComplete: question1to2 });
 
@@ -190,7 +189,6 @@ function question1to2() {
 
     question2();
 }
-
 
 function question2() {
     var timeline3 = new TimelineMax({ });
@@ -365,7 +363,6 @@ function question3() {
         question3End();
     });
 }
-
 
 function question3End() {
     var timeline4_1 = new TimelineMax({ onComplete: question3toEnd });
@@ -559,6 +556,378 @@ function doneToComming() {
 }
 
 function questionComming() {
-    
+    var timeline6 = new TimelineMax({ onComplete: CommingToResult });
+    timeline6.from(".titleComming", 3, {
+        opacity: 0
+    }, 0)
+    .set(".square1", {
+        bottom: '-50%',
+        left: '15%',
+        rotation: 55
+    }, 0)
+    .set(".square2", {
+        bottom: '-50%',
+        left: '0%',
+        rotation: 45
+    }, 0)
+    .set(".square3", {
+        bottom: '-50%',
+        left: '30%',
+        rotation: 45
+    }, 0)
+    .set(".square4", {
+        bottom: '25%',
+        left: '-20%',
+        rotation: 10
+    }, 0)
+    .set(".square5", {
+        bottom: '-50%',
+        left: '-50%',
+        rotation: -10
+    }, 0)
+    .set(".square6", {
+        bottom: '-20%',
+        left: '50%',
+        rotation: -45
+    }, 0)
+    .set(".square7", {
+        bottom: '-50%',
+        left: '0%',
+        rotation: 45
+    }, 0)
+    .set(".square8", {
+        bottom: '10%',
+        left: '-20%',
+        rotation: -10
+    }, 0)
+    .set(".square9", {
+        bottom: '20%',
+        left: '-35%',
+        rotation: 45
+    }, 0)
+    .set(".square10", {
+        bottom: '-20%',
+        left: '-20%',
+        rotation: 40
+    }, 0)
+    .set(".square11", {
+        bottom: '-100%',
+        left: '-100%',
+        rotation: 45
+    }, 0);
+    timeline6.add(
+        TweenMax.to(".square1", 1, {
+            bottom: '100%',
+            left: '130%'
+        }),
+        2
+    );
+    timeline6.add(
+        TweenMax.to(".square2", 1.5, {
+            bottom: '110%',
+            left: '120%'
+        }),
+        2.4
+    );
+    timeline6.add(
+        TweenMax.to(".square3", 1, {
+            bottom: '60%',
+            left: '120%'
+        }),
+        2.8
+    );
+    timeline6.add(
+        TweenMax.to(".square4", 1, {
+            bottom: '110%',
+            left: '70%'
+        }),
+        2.8
+    );
+    timeline6.add(
+        TweenMax.to(".square5", 1.3, {
+            bottom: '150%',
+            left: '150%'
+        }),
+        3.5
+    );
+    timeline6.add(
+        TweenMax.to(".square6", 2, {
+            bottom: '50%',
+            left: '130%'
+        }),
+        3.8
+    );
+    timeline6.add(
+        TweenMax.to(".square7", 1.3, {
+            bottom: '120%',
+            left: '130%'
+        }),
+        4.5
+    );
+    timeline6.add(
+        TweenMax.to(".square8", 1.3, {
+            bottom: '130%',
+            left: '60%'
+        }),
+        4.5
+    );
+    timeline6.add(
+        TweenMax.to(".square9", 1.2, {
+            bottom: '140%',
+            left: '90%'
+        }),
+        4.9
+    );
+    timeline6.add(
+        TweenMax.to(".square10", 1.2, {
+            bottom: '120%',
+            left: '100%'
+        }),
+        5
+    );
+    timeline6.add(
+        TweenMax.to(".square11", 2, {
+            bottom: '20%',
+            left: '50%',
+            scale: 5
+        }),
+        5.3
+    );
+    timeline6.add(
+        TweenMax.to(".titleComming", 0.8, {
+            opacity: 0
+        }),
+        5.2
+    );
 }
+
+function CommingToResult() {
+    document.querySelector(".section6").style.display = "none";
+    document.querySelector(".section7").style.display = "flex";
+
+    questionResult();
+}
+
+function questionResult() {
+    var timeline7 = new TimelineMax({ onComplete: ResultToLastResult });
+    timeline7.from(".titleResult", 3, {
+        opacity: 0
+    }, 0)
+    .set(".circle1", {
+        bottom: '0%',
+        left: '-30%',
+    }, 0)
+    .set(".circle2", {
+        bottom: '-60%',
+        left: '-10%',
+    }, 0)
+    .set(".circle3", {
+        bottom: '-50%',
+        left: '30%',
+    }, 0)
+    .set(".circle4", {
+        bottom: '20%',
+        left: '-30%',
+    }, 0)
+    .set(".circle5", {
+        bottom: '-15%',
+        left: '-15%',
+    }, 0)
+    .set(".circle6", {
+        bottom: '-40%',
+        left: '-60%',
+    }, 0)
+    .set(".circle7", {
+        bottom: '30%',
+        left: '-35%',
+    }, 0)
+    .set(".circle8", {
+        bottom: '-40%',
+        left: '30%',
+    }, 0)
+    .set(".circle9", {
+        bottom: '-20%',
+        left: '30%',
+    }, 0)
+    .set(".circle10", {
+        bottom: '-100%',
+        left: '-100%',
+    }, 0);
+
+    timeline7.add(
+        TweenMax.to(".circle1", 1, {
+            bottom: '130%',
+            left: '80%',
+        }),
+        2
+    );
+    timeline7.add(
+        TweenMax.to(".circle2", 1.3, {
+            bottom: '100%',
+            left: '140%',
+        }),
+        2.6
+    );
+    timeline7.add(
+        TweenMax.to(".circle3", 1.3, {
+            bottom: '100%',
+            left: '140%',
+        }),
+        3.1
+    );
+    timeline7.add(
+        TweenMax.to(".circle4", 1.2, {
+            bottom: '100%',
+            left: '80%',
+        }),
+        3.3
+    );
+    timeline7.add(
+        TweenMax.to(".circle5", 1, {
+            bottom: '110%',
+            left: '110%',
+        }),
+        4.1
+    );
+    timeline7.add(
+        TweenMax.to(".circle6", 1, {
+            bottom: '150%',
+            left: '130%',
+        }),
+        4.8
+    );
+    timeline7.add(
+        TweenMax.to(".circle7", 1, {
+            bottom: '100%',
+            left: '140%',
+        }),
+        5.3
+    );
+    timeline7.add(
+        TweenMax.to(".circle8", 1, {
+            bottom: '50%',
+            left: '140%',
+        }),
+        5.3
+    );
+    timeline7.add(
+        TweenMax.to(".circle9", 0.8, {
+            bottom: '80%',
+            left: '130%',
+        }),
+        5.8
+    );
+    timeline7.add(
+        TweenMax.to(".circle10", 1.5, {
+            bottom: '200%',
+            left: '200%',
+            scale: 10
+        }),
+        6
+    );
+    timeline7.add(
+        TweenMax.to(".titleResult", 0.5, {
+            opacity: 0
+        }),
+        5.8
+    );
+}
+
+function ResultToLastResult() {
+    var timeline8 = new TimelineMax({ onComplete: ResultToLastResult });
+    timeline8.set(".triangleTitle", {
+        left: '20%',
+        top: '16%'
+    }, 0)
+    .set(".triangleInfo", {
+        opacity: 0
+    }, 0)
+    .set(".triangleText", {
+        opacity: 0
+    }, 0)
+    .set(".btnReStart", {
+        opacity: 0
+    }, 0)
+    .set(".main_triangle_outline", {
+        bottom: '-85%'
+    }, 0)
+    .set(".main_triangle_cover1", {
+        bottom: '-85%'
+    }, 0)
+    .set(".main_triangle_cover2", {
+        bottom: '-85%'
+    }, 0);
+    
+
+    timeline8.add(
+        TweenMax.from(".triangleTitle", 3, {
+            opacity: 0
+        }),
+        0
+    );
+    timeline8.add(
+        TweenMax.to(".main_triangle_outline", 3, {
+            bottom: '-203px'
+        }),
+        3
+    );
+    timeline8.add(
+        TweenMax.to(".main_triangle_cover1", 2, {
+            bottom: '0'
+        }),
+        3.3
+    );
+    timeline8.add(
+        TweenMax.to(".main_triangle_cover2", 2, {
+            bottom: '0'
+        }),
+        3.1
+    );
+
+    timeline8.add(
+        TweenMax.from(".small_triangle1", 1, {
+            top: -50
+        }),
+        3
+    );
+    timeline8.add(
+        TweenMax.from(".small_triangle2", 2, {
+            top: -50
+        }),
+        3
+    );
+    timeline8.add(
+        TweenMax.from(".small_triangle3", 1.8, {
+            top: -50
+        }),
+        3.3
+    );
+    timeline8.add(
+        TweenMax.from(".small_triangle4", 1.8, {
+            top: -50
+        }),
+        3.5
+    );
+    timeline8.add(
+        TweenMax.from(".small_triangle5", 1.5, {
+            top: -50
+        }),
+        3.8
+    );
+    timeline8.add(
+        TweenMax.from(".small_triangle6", 0.8, {
+            top: -50
+        }),
+        4.2
+    );
+    timeline8.add(
+        TweenMax.from(".small_triangle7", 0.8, {
+            top: -50
+        }),
+        4.2
+    );
+}
+
+ResultToLastResult();
+
 start();

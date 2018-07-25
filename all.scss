@@ -8,7 +8,17 @@ body {
   background-color: rgb(212, 212, 212);
   height: 100%;
 }
-.section1,.section2,.section3,.section4,.section5,.section6 {
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section_TRIANGLE,
+.section_RECTANGLE,
+.section_CIRCULAR {
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -20,6 +30,7 @@ body {
   height: 768px;
   background-color: #1469ff;
 }
+
 .section1 {
   .title {
     position: absolute;
@@ -38,7 +49,6 @@ body {
       font-size: 24px;
     }
   }
-
   .triangle {
     display: flex;
     position: absolute;
@@ -85,49 +95,47 @@ body {
   }
 }
 
-
 .question {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 61%;
-    box-sizing: border-box;
-    padding: 0 80px;
-    .question_num {
-      font-size: 64px;
-      color: #ff3c82;
-      text-align: center;
-      margin-bottom: 16px;
-    }
-    .question_title {
-      font-size: 48px;
-      line-height: 48px;
-      margin-bottom: 8px;
-    }
-    .question_notice {
-      font-size: 24px;
-      line-height: 36px;
-      margin-bottom: 16px;
-    }
-    .btn {
-      border: 2px solid #ffffff;
-      width: 100%;
-      border-radius: 30.5px;
-      font-size: 20px;
-      color: #ffffff;
-      text-align: center;
-      line-height: 36px;
-      padding: 10px 0;
-      margin-top: 16px;
-      cursor: pointer;
-      transition: all 0.2s;
-      &:hover {
-        background-color: #fff;
-        color: black;
-      }
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 61%;
+  box-sizing: border-box;
+  padding: 0 80px;
+  .question_num {
+    font-size: 64px;
+    color: #ff3c82;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .question_title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
+  .question_notice {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+  .btn {
+    border: 2px solid #ffffff;
+    width: 100%;
+    border-radius: 30.5px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 36px;
+    padding: 10px 0;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      background-color: #fff;
+      color: black;
     }
   }
-  
+}
 
 .section2 {
   justify-content: start;
@@ -222,192 +230,589 @@ body {
   }
 }
 
-
 .section4 {
-    justify-content: flex-start;
-    background-color: #FF3C82;
-    .section4_bg {
-      width: 39%;
-      height: 100%;
-      background: #1469FF;
-      position: absolute;
-      right: 0;
-
-    }
-    .section4_circle {
-      position: absolute;
-      width: 312px;
-      height: 312px;
-      background-color: white;
-      border-radius: 50%;
-      bottom: 465px;
-      right: -65px;
-      z-index: 2;
-    }
-    .section4_triangle {
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 120px 207.8px 120px;
-      border-color: transparent transparent black transparent;
-      right: -10px;
-      bottom: 50px;
-      z-index: 1;
-    }
-    .section4_square {
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background: #0027C8 ;
-      bottom: 290px;
-      left: 50px;
-    }
-    .question_title {
-      color: #000;
-    }
-    .question_notice {
-      color: #000;
-    }
-    .question_num {
-        color: #fff;
-      }
+  justify-content: flex-start;
+  background-color: #FF3C82;
+  .section4_bg {
+    width: 39%;
+    height: 100%;
+    background: #1469FF;
+    position: absolute;
+    right: 0;
+  }
+  .section4_circle {
+    position: absolute;
+    width: 312px;
+    height: 312px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 465px;
+    right: -65px;
+    z-index: 2;
+  }
+  .section4_triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 120px 207.8px 120px;
+    border-color: transparent transparent black transparent;
+    right: -10px;
+    bottom: 50px;
+    z-index: 1;
+  }
+  .section4_square {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #0027C8;
+    bottom: 290px;
+    left: 50px;
+  }
+  .question_title {
+    color: #000;
+  }
+  .question_notice {
+    color: #000;
+  }
+  .question_num {
+    color: #fff;
+  }
 }
 
-
 .section5 {
+  justify-content: center;
+  background-color: #1469FF;
+  .titleDone {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #1469FF;
-    .titleDone {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        height: 100%;
-        z-index: 100;
-        h2 {
-          font-size: 64px;
-          margin: 0;
-        }
-        span {
-          font-size: 24px;
-        }
+    align-items: center;
+    color: white;
+    height: 100%;
+    z-index: 100;
+    h2 {
+      font-size: 64px;
+      margin: 0;
     }
-    .triangle1 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 59px 102.2px 59px;
-        border-color: transparent transparent white transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
+    span {
+      font-size: 24px;
     }
-    .triangle2 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 118px 204.4px 118px;
-        border-color: transparent transparent #0027C8 transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-    .triangle3 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 60px 103.9px 60px;
-        border-color: transparent transparent #000 transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-    .triangle4 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 202.5px 350.7px 202.5px;
-        border-color: transparent transparent #000 transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-    .triangle5 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 410px 710.1px 410px;
-        border-color: transparent transparent #0027C8 transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-    .triangle6 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 60px 103.9px 60px;
-        border-color: transparent transparent #fff transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-    .triangle7 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 60px 103.9px 60px;
-        border-color: transparent transparent #000 transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-    .triangle8 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 118px 204.4px 118px;
-        border-color: transparent transparent #0027C8 transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-    .triangle9 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 202.5px 350.7px 202.5px;
-        border-color: transparent transparent #000 transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-    .triangle10 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 410px 710.1px 410px;
-        border-color: transparent transparent #0027C8 transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-    .triangle11 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 410px 710.1px 410px;
-        border-color: transparent transparent #0027C8 transparent;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-} 
+  }
+  .triangle1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 59px 102.2px 59px;
+    border-color: transparent transparent white transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 118px 204.4px 118px;
+    border-color: transparent transparent #0027C8 transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle3 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 60px 103.9px 60px;
+    border-color: transparent transparent #000 transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle4 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 202.5px 350.7px 202.5px;
+    border-color: transparent transparent #000 transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle5 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 410px 710.1px 410px;
+    border-color: transparent transparent #0027C8 transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle6 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 60px 103.9px 60px;
+    border-color: transparent transparent #fff transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle7 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 60px 103.9px 60px;
+    border-color: transparent transparent #000 transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle8 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 118px 204.4px 118px;
+    border-color: transparent transparent #0027C8 transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle9 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 202.5px 350.7px 202.5px;
+    border-color: transparent transparent #000 transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle10 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 410px 710.1px 410px;
+    border-color: transparent transparent #0027C8 transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .triangle11 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 410px 710.1px 410px;
+    border-color: transparent transparent #0027C8 transparent;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+}
 
 .section6 {
+  justify-content: center;
+  background-color: #0027C8;
+  .titleComming {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #0027C8;
+    align-items: center;
+    color: white;
+    height: 100%;
+    z-index: 100;
+    h2 {
+      font-size: 64px;
+      margin: 0;
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+  .square1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square2 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square3 {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background: #000;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square4 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square5 {
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    background: #000;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square6 {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square7 {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square8 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square9 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: #000;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square10 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px;
+  }
+  .square11 {
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    background: #FF3C82;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+.section7 {
+  justify-content: center;
+  background-color: #FF3C82;
+  .titleResult {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 100%;
+    z-index: 100;
+    h2 {
+      font-size: 64px;
+      margin: 0;
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+  .circle1 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: #0027C8;
+    bottom: 0px;
+    left: 0px;
+  }
+  .circle2 {
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    background: #fff;
+    bottom: 0px;
+    left: 0px;
+  }
+  .circle3 {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: #000;
+    bottom: 0px;
+    left: 0px;
+  }
+  .circle4 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: #0027C8;
+    bottom: 0px;
+    left: 0px;
+  }
+  .circle5 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px;
+  }
+  .circle6 {
+    position: absolute;
+    width: 580px;
+    height: 580px;
+    border-radius: 50%;
+    background: #fff;
+    bottom: 0px;
+    left: 0px;
+    z-index: 101;
+  }
+  .circle7 {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #000;
+    bottom: 0px;
+    left: 0px;
+  }
+  .circle8 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #0027C8;
+    bottom: 0px;
+    left: 0px;
+  }
+  .circle9 {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #1469FF;
+    bottom: 0px;
+    left: 0px;
+  }
+  .circle10 {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: #fff;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+//三角形
+.section_TRIANGLE {
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1469FF;
+  .triangleTitle {
+    text-align: center;
+    position: absolute;
+    right: 180px;
+    top: 90px;
+    h2 {
+      font-size: 64px;
+      color: #FFFFFF;  
+      margin: 0;
+      margin-bottom: 24px;
+    }
+    span {
+      display: inline-block;
+      font-size: 24px;
+      color: #FFFFFF;
+      line-height: 36px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+  }
+  .triangleInfo {
+    font-size: 36px;
+    color: #0027C8;
+    line-height: 48px;
+    font-weight: 900;
+    position: absolute;
+    right: 100px;
+    bottom: 300px;
+    span {
+      display: block;
+      margin-bottom: 24px;
+    }
+  }
+  .triangleText {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 36px;
+    width: 380px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    position: absolute;
+    right: 100px;
+    bottom: 155px;
+  }
+  .btn {
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
+    border: 2px solid #ffffff;
+    width: 380px;
+    border-radius: 30.5px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 36px;
+    padding: 10px 0;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      background-color: #fff;
+      color: black;
+    }
+  }
+  .main_triangle_outline {
+    -webkit-text-stroke: 4px white;
+    color: transparent;
+    font-size: 585px;
+    z-index: 2;
+    position: absolute;
+    bottom: -203px;
+    left: 25%;
+  }
+  .main_triangle_cover1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 215px 372.4px 215px;
+    border-color: transparent transparent #000 transparent;
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+    z-index: 1;
+  }
+  .main_triangle_cover2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 240px 415.7px 240px;
+    border-color: transparent transparent #0027C8 transparent;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    z-index: 3;
+  }
+  .small_triangle1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 80px;
+  }
+  .small_triangle2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+  }
+  .small_triangle3 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 220px;
+    left: 750px;
+  }
+  .small_triangle4 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: #0027C8 transparent transparent transparent;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+  }
+  .small_triangle5 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: #0027C8 transparent transparent transparent;
+    position: absolute;
+    top: 130px;
+    left: 300px;
+  }
+  .small_triangle6 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: #0027C8 transparent transparent transparent;
+    position: absolute;
+    top: 50px;
+    left: 600px;
+  }
+  .small_triangle7 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52.0px 30px 0 30px;
+    border-color: #0027C8 transparent transparent transparent;
+    position: absolute;
+    top: 160px;
+    left: 950px;
+  }
+}
+//正方形
+.section_RECTANGLE {
+  justify-content: center;
+  background-color: #0027C8;
+}
+//圓形
+.section_CIRCULAR {
+  justify-content: center;
+  background-color: #FF3C82;
 }
