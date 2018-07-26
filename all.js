@@ -586,7 +586,7 @@ function questionComming() {
         rotation: -10
     }, 0)
     .set(".square6", {
-        bottom: '-20%',
+        bottom: '-23%',
         left: '50%',
         rotation: -45
     }, 0)
@@ -842,19 +842,19 @@ function ResultToLastResult() {
 
 function lastResult() {
     var timeline8 = new TimelineMax({ });
-    timeline8.set(".triangleTitle", {
-        left: '20%',
-        top: '16%'
-    }, 0)
-    .set(".triangleInfo", {
-        opacity: 0
-    }, 0)
-    .set(".triangleText", {
-        opacity: 0
-    }, 0)
-    .set(".btnReStart", {
-        opacity: 0
-    }, 0)
+    timeline8.to(".triangleTitle", 3, {
+        right: 180,
+        top: 90
+    }, 6.8)
+    // .set(".triangleInfo", {
+    //     opacity: 0
+    // }, 0)
+    // .set(".triangleText", {
+    //     opacity: 0
+    // }, 0)
+    // .set(".btnReStart", {
+    //     opacity: 0
+    // }, 0)
     .set(".main_triangle_outline", {
         bottom: '-85%'
     }, 0)
@@ -910,7 +910,7 @@ function lastResult() {
         3.3
     );
     timeline8.add(
-        TweenMax.from(".small_triangle4", 1.8, {
+        TweenMax.from(".small_triangle4", 2.5, {
             top: -50
         }),
         3.5
@@ -933,6 +933,130 @@ function lastResult() {
         }),
         4.2
     );
+
+    timeline8.add(
+        TweenMax.to(".small_triangle4", 1.5, {
+            left: 550,
+            top: 400
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".small_triangle7", 1.5, {
+            left: 550,
+            top: 323
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".small_triangle6", 1.5, {
+            left: 550,
+            top: 247
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".small_triangle1", 1.5, {
+            top: -50
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".small_triangle2", 1.5, {
+            top: -50
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".small_triangle3", 1.5, {
+            top: -50
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".small_triangle5", 1.5, {
+            top: -50
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".main_triangle_cover2", 1.5, {
+            bottom: 165,
+            left: '3%'
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".main_triangle_cover1", 2, {
+            bottom: 280,
+            left: '5%',
+            rotation: -80
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".main_triangle_outline", 2, {
+            bottom: 280,
+            left: '10%',
+            rotation: 80,
+            fontSize: '400px'
+        }),
+        7
+    );
+    timeline8.add(
+        TweenMax.to(".main_triangle_outline", 5, {
+            bottom: 280,
+            left: '10%',
+            rotation: 50,
+            fontSize: '400px',
+            repeat: -1,
+            yoyo: true
+        }),
+        9
+    );
+    timeline8.add(
+        TweenMax.to(".main_triangle_cover2", 5, {
+            bottom: 135,
+            left: '2%',
+            repeat: -1,
+            yoyo: true
+        }),
+        9
+    );
+    timeline8.add(
+        TweenMax.to(".main_triangle_cover1", 5, {
+            bottom: 280,
+            rotation: -40,
+            repeat: -1,
+            yoyo: true
+        }),
+        9
+    );
+    timeline8.add(
+        TweenMax.to(".triangleInfo", 2, {
+            opacity: 1,
+        }),
+        8
+    );
+    timeline8.add(
+        TweenMax.to(".triangleText", 2, {
+            opacity: 1,
+        }),
+        8
+    );
+    timeline8.add(
+        TweenMax.to(".btnReStart", 2, {
+            opacity: 1,
+        }),
+        8
+    );
+
+    // $('.btnReStart').click(function(){
+    //     timeline8.pause();
+    //     document.querySelector(".section_TRIANGLE").style.display = "none";
+    //     document.querySelector(".section1").style.display = "flex";
+    //     start();
+    // });
 }
 
 start();

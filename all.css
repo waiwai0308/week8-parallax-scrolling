@@ -3,12 +3,15 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #d4d4d4;
@@ -26,12 +29,15 @@ body {
 .section_CIRCULAR {
   overflow: hidden;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   position: relative;
@@ -45,16 +51,20 @@ body {
 .section1 .title {
   position: absolute;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   color: white;
@@ -68,13 +78,16 @@ body {
 
 .section1 .triangle {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-transform: rotate(0deg);
@@ -120,13 +133,16 @@ body {
 
 .question {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-align: start;
+  -webkit-align-items: start;
   -ms-flex-align: start;
   align-items: start;
   width: 61%;
@@ -166,6 +182,7 @@ body {
 
 .section2 {
   -webkit-box-pack: start;
+  -webkit-justify-content: start;
   -ms-flex-pack: start;
   justify-content: start; }
   .section2 .section2_bg {
@@ -207,6 +224,7 @@ body {
 
 .section3 {
   -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   background-color: #0027C8; }
@@ -249,6 +267,7 @@ body {
 
 .section4 {
   -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   background-color: #FF3C82; }
@@ -293,22 +312,27 @@ body {
 
 .section5 {
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #1469FF; }
   .section5 .titleDone {
     position: absolute;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     color: white;
@@ -421,22 +445,27 @@ body {
 
 .section6 {
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #0027C8; }
   .section6 .titleComming {
     position: absolute;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     color: white;
@@ -527,22 +556,27 @@ body {
 
 .section7 {
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #FF3C82; }
   .section7 .titleResult {
     position: absolute;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     color: black;
@@ -637,18 +671,20 @@ body {
 
 .section_TRIANGLE {
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #1469FF; }
   .section_TRIANGLE .triangleTitle {
     text-align: center;
     position: absolute;
-    right: 180px;
-    top: 90px; }
+    right: 37%;
+    top: 16%; }
     .section_TRIANGLE .triangleTitle h2 {
       font-size: 64px;
       color: #FFFFFF;
@@ -668,7 +704,8 @@ body {
     font-weight: 900;
     position: absolute;
     right: 100px;
-    bottom: 300px; }
+    bottom: 300px;
+    opacity: 0; }
     .section_TRIANGLE .triangleInfo span {
       display: block;
       margin-bottom: 24px; }
@@ -681,7 +718,8 @@ body {
     margin-bottom: 24px;
     position: absolute;
     right: 100px;
-    bottom: 155px; }
+    bottom: 155px;
+    opacity: 0; }
   .section_TRIANGLE .btn {
     position: absolute;
     right: 100px;
@@ -695,6 +733,7 @@ body {
     line-height: 36px;
     padding: 10px 0;
     margin-top: 16px;
+    opacity: 0;
     cursor: pointer;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -709,7 +748,8 @@ body {
     z-index: 2;
     position: absolute;
     bottom: -203px;
-    left: 25%; }
+    left: 25%;
+    font-family: CURSIVE; }
   .section_TRIANGLE .main_triangle_cover1 {
     width: 0;
     height: 0;
@@ -764,7 +804,7 @@ body {
     border-width: 52.0px 30px 0 30px;
     border-color: #0027C8 transparent transparent transparent;
     position: absolute;
-    top: 150px;
+    top: 400px;
     left: 200px; }
   .section_TRIANGLE .small_triangle5 {
     width: 0;
@@ -796,12 +836,14 @@ body {
 
 .section_RECTANGLE {
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #0027C8; }
 
 .section_CIRCULAR {
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #FF3C82; }
